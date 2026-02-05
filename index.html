@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Scout - Weekly API Competitive Intelligence</title>
+    <meta name="description" content="Stay ahead of the API market. Weekly insights on new launches, pricing changes, and competitive moves. $15/month.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            background: white;
+            border-radius: 12px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .value-props {
+            text-align: left;
+            margin: 40px 0;
+            padding: 0 40px;
+        }
+        .value-prop {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        .value-prop span {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        .cta-section {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        .price-sub {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .sample {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .sample h2 {
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        .sample-content {
+            color: #666;
+            line-height: 1.8;
+        }
+        .sample-item {
+            margin: 15px 0;
+            padding-left: 20px;
+            border-left: 3px solid #667eea;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>📡 API Scout</h1>
+            <p class="tagline">Never miss an API market move again</p>
+            
+            <div class="value-props">
+                <div class="value-prop">
+                    <span>🚀</span>
+                    <div>
+                        <strong>New API Launches</strong><br>
+                        Track 5-7 new APIs every week before your competitors do
+                    </div>
+                </div>
+                <div class="value-prop">
+                    <span>💰</span>
+                    <div>
+                        <strong>Pricing Intelligence</strong><br>
+                        Monitor competitor pricing changes and strategic shifts
+                    </div>
+                </div>
+                <div class="value-prop">
+                    <span>🎯</span>
+                    <div>
+                        <strong>AI-Powered Analysis</strong><br>
+                        Get actionable insights on what moves mean for your strategy
+                    </div>
+                </div>
+                <div class="value-prop">
+                    <span>⏱️</span>
+                    <div>
+                        <strong>Save 5+ Hours Weekly</strong><br>
+                        Stop manually tracking ProductHunt, HN, and GitHub
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="price">$15<span style="font-size: 24px; color: #999;">/month</span></div>
+                <p class="price-sub">Cancel anytime. First issue free.</p>
+                
+                <form id="signup-form">
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                    <button type="submit" class="btn">Get Weekly API Intelligence →</button>
+                </form>
+                
+                <p style="margin-top: 20px; color: #999; font-size: 14px;">
+                    Join dev tool founders at Stripe, Twilio, and PostHog
+                </p>
+            </div>
+        </div>
+
+        <div class="sample">
+            <h2>📬 This Week's API Intelligence (Sample)</h2>
+            <div class="sample-content">
+                <div class="sample-item">
+                    <strong>🆕 Anthropic MCP Protocol</strong><br>
+                    Model Context Protocol launched - enables AI agents to connect to data sources. 
+                    Already 40+ community implementations. Potential standard emerging.
+                </div>
+                <div class="sample-item">
+                    <strong>💸 OpenAI Pricing Cut</strong><br>
+                    GPT-4 Turbo dropped 50% ($10→$5/1M tokens). Competitive pressure from 
+                    Gemini & Anthropic. Expect further cuts Q1.
+                </div>
+                <div class="sample-item">
+                    <strong>🔥 Resend Email API</strong><br>
+                    Hit $2M ARR in 12 months. Simple API, great DX. Eating SendGrid's lunch 
+                    with developer-first approach.
+                </div>
+                <div class="sample-item">
+                    <strong>📊 What This Means</strong><br>
+                    Infrastructure APIs becoming commoditized. Winners: best DX + lowest friction. 
+                    Losers: legacy enterprise pricing. Opportunity: specialized vertical APIs.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built by developers, for developers • Delivered every Monday • Made with ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            
+            // TODO: Connect to Mailchimp API
+            alert('Thanks for your interest! Email: ' + email + '\n\nWe\'re launching soon. You\'ll receive the first issue free.');
+            
+            // For now, log to console
+            console.log('Signup:', email);
+        });
+    </script>
+</body>
+</html>
