@@ -205,15 +205,35 @@
     </div>
 
     <script>
-        document.getElementById('signup-form').addEventListener('submit', function(e) {
+        document.getElementById('signup-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const email = document.getElementById('email').value;
+            const btn = document.querySelector('.btn');
+            const originalText = btn.textContent;
             
-            // TODO: Connect to Mailchimp API
-            alert('Thanks for your interest! Email: ' + email + '\n\nWe\'re launching soon. You\'ll receive the first issue free.');
+            btn.textContent = 'Submitting...';
+            btn.disabled = true;
             
-            // For now, log to console
-            console.log('Signup:', email);
+            try {
+                // Submit to Formspree (free, no account needed)
+                const response = await fetch('https://formspree.io/f/xzzbbqak', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email, _subject: 'New API Scout Signup!' })
+                });
+                
+                if (response.ok) {
+                    alert('🎉 You\'re in! Check your email for Issue #001 (it\'s free).');
+                    document.getElementById('email').value = '';
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                alert('Hmm, something went wrong. Email dev@boringdata.com to sign up manually.');
+            } finally {
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
         });
     </script>
 </body>
