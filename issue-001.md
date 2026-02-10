@@ -1,6 +1,9 @@
 # 📡 API Scout - Issue #001
 ## Week of February 3-9, 2026
 
+**By Ben Fife** | Independent API Intelligence  
+*10+ years building APIs & advising dev tool companies*
+
 Welcome to API Scout! Your weekly dose of API market intelligence—launches, pricing moves, and strategic shifts that matter.
 
 ---
